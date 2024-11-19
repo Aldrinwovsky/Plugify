@@ -1,5 +1,7 @@
 package com.plugify.model;
 
+import br.com.plugify.model.Room;
+
 public class Outlet {
     private int idOutlet;
     private String name;

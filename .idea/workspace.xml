@@ -4,23 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Alert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Consumption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Outlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/utils/DatabaseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/utils/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+    <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="Adicionando Room">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/exception/EntidadeNaoEncontradaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/factory/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroRoomView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemRoomView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaRoomPorIdView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Outlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +33,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2p3GdIzNmliETIeVdr51cLIn4Od" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -51,19 +49,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CadastroRoomView.executor": "Run",
+    "Application.ListagemRoomView.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.PesquisaRoomPorIdView.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Aldri/OneDrive/Área de Trabalho/FIAP/TioPatinhas/GS2 - Plugify/Plugify/src",
+    "last_opened_file_path": "C:/Users/abner/Desktop/Plugify",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
@@ -78,6 +83,10 @@
       <recent name="C:\Users\Aldri\OneDrive\Área de Trabalho\FIAP\TioPatinhas\GS2 - Plugify\Plugify\src\main" />
       <recent name="C:\Users\Aldri\OneDrive\Área de Trabalho\FIAP\TioPatinhas\GS2 - Plugify\Plugify\src" />
       <recent name="C:\Users\Aldri\OneDrive\Área de Trabalho\FIAP\TioPatinhas\GS2 - Plugify\Plugify\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.plugify" />
+      <recent name="br.com.plugify.factory" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,7 +112,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -117,10 +127,15 @@
       <updated>1731987431774</updated>
       <workItem from="1731987432796" duration="306000" />
       <workItem from="1731987761805" duration="721000" />
+      <workItem from="1732030694892" duration="10743000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adicionando Room" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando Room" />
   </component>
 </project>

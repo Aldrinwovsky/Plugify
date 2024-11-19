@@ -1,4 +1,4 @@
-package com.plugify.model;
+package br.com.plugify.model;
 
 public class Room {
     private int idRoom;
