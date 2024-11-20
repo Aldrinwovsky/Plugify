@@ -20,8 +20,8 @@ public class CadastroRoomView {
                 System.out.println("Qual o ID do cômodo?");
 
                 if (RoomDao.inputRoom.hasNextInt()) {
-                    idReposta = RoomDao.inputRoom.nextInt();
-                    RoomDao.inputRoom.nextLine();
+                        idReposta = RoomDao.inputRoom.nextInt();
+                        RoomDao.inputRoom.nextLine();
                     break; // Encerra o loop se a entrada for válida
                 } else {
                     System.out.println("Isso não é um número inteiro. Tente novamente.");

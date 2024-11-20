@@ -12,6 +12,10 @@ public class Room {
         this.description = description;
     }
 
+    public Room(int id){
+        this.idRoom = id;
+    }
+
     // Getters e Setters
     public int getIdRoom() {
         return idRoom;

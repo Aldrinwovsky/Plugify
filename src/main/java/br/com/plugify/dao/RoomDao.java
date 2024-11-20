@@ -12,79 +12,79 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class RoomDao {
 
-        public static Scanner inputRoom = new Scanner(System.in);
-        private Connection conexao;
 
-        public RoomDao() throws SQLException {
-            conexao = ConnectionFactory.getConnection();
-        }
+    public static Scanner inputRoom = new Scanner(System.in);
+    private Connection conexao;
 
-        public void cadastrar(Room room) throws SQLException{
-            PreparedStatement stm = conexao.prepareStatement("INSERT INTO rooms (id_room, name, description) VALUES (?, ?, ?)");
+    // Construtor que inicializa a conexão com o banco de dados
+    public RoomDao() throws SQLException {
+        conexao = ConnectionFactory.getConnection();
+    }
+
+    // Método para cadastrar um Room no banco de dados
+    public void cadastrar(Room room) throws SQLException {
+        String query = "INSERT INTO rooms (id_room, name, description) VALUES (?, ?, ?)";
+        try (PreparedStatement stm = conexao.prepareStatement(query)) {
             stm.setInt(1, room.getIdRoom());
             stm.setString(2, room.getName());
             stm.setString(3, room.getDescription());
             stm.executeUpdate();
-
         }
+    }
 
-        public Room pesquisar(long id_room) throws SQLException,EntidadeNaoEncontradaException{
-            PreparedStatement stm = conexao.prepareStatement("SELECT * FROM rooms WHERE id_room = ?");
-            stm.setLong(1, id_room);
-
-            ResultSet resultado = stm.executeQuery();
-            if (!resultado.next())
-                throw new EntidadeNaoEncontradaException("Produto não encontrado");
-            parseRoom(resultado);
-
-
-            return parseRoom(resultado);
+    // Método para pesquisar um Room por ID
+    public Room pesquisar(long idRoom) throws SQLException, EntidadeNaoEncontradaException {
+        String query = "SELECT * FROM rooms WHERE id_room = ?";
+        try (PreparedStatement stm = conexao.prepareStatement(query)) {
+            stm.setLong(1, idRoom);
+            try (ResultSet resultado = stm.executeQuery()) {
+                if (!resultado.next()) {
+                    throw new EntidadeNaoEncontradaException("Cômodo não encontrado");
+                }
+                return parseRoom(resultado);
+            }
         }
+    }
 
-        private Room parseRoom(ResultSet result) throws SQLException{
-            int id = result.getInt("id_room");
-            String nome = result.getString("name");
-            String descricao = result.getString("description");
-            return new Room(id, nome, descricao);
-        }
+    // Método auxiliar para converter o ResultSet em um objeto Room
+    private Room parseRoom(ResultSet result) throws SQLException {
+        int id = result.getInt("id_room");
+        String nome = result.getString("name");
+        String descricao = result.getString("description");
+        return new Room(id, nome, descricao);
+    }
 
-        public List<Room> listar() throws SQLException{
-            PreparedStatement stm = conexao.prepareStatement("SELECT * FROM rooms");
-            ResultSet resultado = stm.executeQuery();
+    // Método para listar todos os rooms no banco de dados
+    public List<Room> listar() throws SQLException {
+        String query = "SELECT * FROM rooms";
+        try (PreparedStatement stm = conexao.prepareStatement(query);
+             ResultSet resultado = stm.executeQuery()) {
             List<Room> lista = new ArrayList<>();
-
-            while (resultado.next()){
+            while (resultado.next()) {
                 lista.add(parseRoom(resultado));
             }
             return lista;
         }
+    }
 
-
-        public void fechaConexao() throws SQLException{
-            conexao.close();
+    // Método para buscar um Room por ID
+    public Room buscarRoomPorId(int idRoom) throws SQLException {
+        String query = "SELECT * FROM rooms WHERE id_room = ?";
+        try (PreparedStatement stm = conexao.prepareStatement(query)) {
+            stm.setInt(1, idRoom);
+            try (ResultSet resultado = stm.executeQuery()) {
+                if (resultado.next()) {
+                    return parseRoom(resultado);
+                }
+            }
         }
+        return null; // Retorna null se não encontrar a sala
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Método para fechar a conexão
+    public void fechaConexao() throws SQLException {
+        conexao.close();
+    }
 }

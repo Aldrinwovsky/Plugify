@@ -1,21 +1,27 @@
-package com.plugify.model;
-
-import br.com.plugify.model.Room;
+package br.com.plugify.model;
 
 public class Outlet {
     private int idOutlet;
     private String name;
     private String macAddress;
-    private int status;
+    private boolean status;
     private Room room;
+    private int idRoom;
 
     // Construtores
-    public Outlet(int idOutlet, String name, String macAddress, int status, Room room) {
+    public Outlet(int idOutlet, String name, String macAddress, boolean status, Room room) {
         this.idOutlet = idOutlet;
         this.name = name;
         this.macAddress = macAddress;
         this.status = status;
         this.room = room;
+    }
+    public Outlet(int idOutlet, String name, String macAddress, boolean status, int idroom) {
+        this.idOutlet = idOutlet;
+        this.name = name;
+        this.macAddress = macAddress;
+        this.status = status;
+        this.idRoom = idroom;
     }
 
     // Getters e Setters
@@ -43,11 +49,11 @@ public class Outlet {
         this.macAddress = macAddress;
     }
 
-    public int getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 

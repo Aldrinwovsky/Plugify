@@ -1,5 +1,7 @@
 package com.plugify.model;
 
+import br.com.plugify.model.Outlet;
+
 import java.util.Date;
 
 public class Consumption {

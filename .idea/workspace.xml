@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="Adicionando Room">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/exception/EntidadeNaoEncontradaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/factory/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroRoomView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemRoomView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaRoomPorIdView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/OutletDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroOutletView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemOutletView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaOutletView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Consumption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Consumption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Outlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/utils/DatabaseUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/utils/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroRoomView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AbnerSLandim"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Aldrinwovsky/Plugify.git",
+    "accountId": "47b46d6c-3f2f-43fe-ba5f-13e831c8623b"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -49,9 +62,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CadastroOutletView.executor": "Run",
     "Application.CadastroRoomView.executor": "Run",
+    "Application.ListagemOutletView.executor": "Run",
     "Application.ListagemRoomView.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.PesquisaOutletView.executor": "Run",
     "Application.PesquisaRoomPorIdView.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -127,8 +143,17 @@
       <updated>1731987431774</updated>
       <workItem from="1731987432796" duration="306000" />
       <workItem from="1731987761805" duration="721000" />
-      <workItem from="1732030694892" duration="10743000" />
+      <workItem from="1732030694892" duration="27294000" />
     </task>
+    <task id="LOCAL-00001" summary="Adicionando Room">
+      <option name="closed" value="true" />
+      <created>1732046544493</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732046544493</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
