@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="Adicionando Tomadas/outlet">
+    <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="Arrumando tomadas, comodo e adicionando os consumos">
       <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/ConsumptionDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroConsumptionView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemConsumptionView.java" afterDir="false" />
@@ -148,7 +148,7 @@
       <workItem from="1731987432796" duration="306000" />
       <workItem from="1731987761805" duration="721000" />
       <workItem from="1732030694892" duration="27397000" />
-      <workItem from="1732126631821" duration="15445000" />
+      <workItem from="1732126631821" duration="15834000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando Room">
       <option name="closed" value="true" />
@@ -166,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732067276371</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Arrumando tomadas, comodo e adicionando os consumos">
+      <option name="closed" value="true" />
+      <created>1732146094469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732146094469</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +183,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionando Room" />
     <MESSAGE value="Adicionando Tomadas/outlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando Tomadas/outlet" />
+    <MESSAGE value="Arrumando tomadas, comodo e adicionando os consumos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrumando tomadas, comodo e adicionando os consumos" />
   </component>
 </project>
