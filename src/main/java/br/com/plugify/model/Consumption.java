@@ -1,22 +1,44 @@
-package com.plugify.model;
+package br.com.plugify.model;
 
 import br.com.plugify.model.Outlet;
 
-import java.util.Date;
+import java.sql.Date;
+import java.sql.Timestamp;
 
 public class Consumption {
     private int idConsumption;
-    private Date consumptionDate;
+    private Timestamp consumptionDate;
     private double amount;
     private Outlet outlet;
 
     // Construtores
-    public Consumption(int idConsumption, Date consumptionDate, double amount, Outlet outlet) {
+    public Consumption(int idConsumption, Timestamp consumptionDate, double amount, Outlet outlet) {
         this.idConsumption = idConsumption;
         this.consumptionDate = consumptionDate;
         this.amount = amount;
         this.outlet = outlet;
     }
+    public Consumption(Timestamp consumptionDate, double amount, Outlet outlet) {
+        this.idConsumption = idConsumption;
+        this.consumptionDate = consumptionDate;
+        this.amount = amount;
+        this.outlet = outlet;
+    }
+
+    public Consumption(Timestamp consumptionDate, double amount, int codigoTomada) {
+        this.idConsumption = idConsumption;
+        this.consumptionDate = consumptionDate;
+        this.amount = amount;
+        this.outlet = outlet;
+    }
+
+    public Consumption(int a){
+        this.outlet.setIdOutlet(a);
+    }
+
+
+
+
 
     // Getters e Setters
     public int getIdConsumption() {
@@ -27,11 +49,11 @@ public class Consumption {
         this.idConsumption = idConsumption;
     }
 
-    public Date getConsumptionDate() {
+    public Timestamp getConsumptionTimestamp() {
         return consumptionDate;
     }
 
-    public void setConsumptionDate(Date consumptionDate) {
+    public void setConsumptionDate(Timestamp consumptionDate) {
         this.consumptionDate = consumptionDate;
     }
 

@@ -25,11 +25,10 @@ public class RoomDao {
 
     // Método para cadastrar um Room no banco de dados
     public void cadastrar(Room room) throws SQLException {
-        String query = "INSERT INTO rooms (id_room, name, description) VALUES (?, ?, ?)";
+        String query = "INSERT INTO rooms (id_room, name, description) VALUES (seq_rooms.nextval, ?, ?)";
         try (PreparedStatement stm = conexao.prepareStatement(query)) {
-            stm.setInt(1, room.getIdRoom());
-            stm.setString(2, room.getName());
-            stm.setString(3, room.getDescription());
+            stm.setString(1, room.getName());
+            stm.setString(2, room.getDescription());
             stm.executeUpdate();
         }
     }

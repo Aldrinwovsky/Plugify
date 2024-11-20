@@ -5,15 +5,21 @@ public class Room {
     private String name;
     private String description;
 
-    // Construtores
+    // Construtor completo (com ID)
     public Room(int idRoom, String name, String description) {
         this.idRoom = idRoom;
         this.name = name;
         this.description = description;
     }
 
-    public Room(int id){
-        this.idRoom = id;
+    // Construtor sem ID (usado ao cadastrar)
+    public Room(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
+    public Room(int roomsIdRoom) {
+        this.idRoom = roomsIdRoom;
     }
 
     // Getters e Setters

@@ -16,12 +16,22 @@ public class Outlet {
         this.status = status;
         this.room = room;
     }
-    public Outlet(int idOutlet, String name, String macAddress, boolean status, int idroom) {
+    public Outlet(String name, String macAddress, boolean status, Room room) {
         this.idOutlet = idOutlet;
         this.name = name;
         this.macAddress = macAddress;
         this.status = status;
+        this.room = room;
+    }
+    public Outlet(String name, String macAddress, boolean status, int idroom) {
+        this.name = name;
+        this.macAddress = macAddress;
+        this.status = status;
         this.idRoom = idroom;
+    }
+
+    public Outlet(int idTomada) {
+        this.idOutlet = idTomada;
     }
 
     // Getters e Setters

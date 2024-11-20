@@ -10,28 +10,16 @@ import java.sql.SQLException;
 public class CadastroOutletView {
     public static void main(String[] args) {
         try {
-            int idReposta;
             String nomeResposta;
             String macResposta;
             Boolean statusResposta;
-            int idRoomResposta;
+            int idRoomResposta = 0;
 
             // Instância do DAO de Outlet e Room
             OutletDao dao = new OutletDao();
             RoomDao roomDao = new RoomDao();
 
             // Receber dados da tomada
-            while (true) {
-                System.out.println("Qual o ID da tomada?");
-                if (RoomDao.inputRoom.hasNextInt()) {
-                    idReposta = RoomDao.inputRoom.nextInt();
-                    RoomDao.inputRoom.nextLine();
-                    break; // Encerra o loop se a entrada for válida
-                } else {
-                    System.out.println("Isso não é um número inteiro. Tente novamente.");
-                    RoomDao.inputRoom.next(); // Limpa a entrada inválida
-                }
-            }
 
             System.out.println("Qual o nome quer dar a tomada?");
             nomeResposta = RoomDao.inputRoom.nextLine();
@@ -65,7 +53,7 @@ public class CadastroOutletView {
             }
 
             // Criar o objeto Outlet, passando o room ao invés de idRoomResposta
-            Outlet tomada = new Outlet(idReposta, nomeResposta, macResposta, statusResposta, room);
+            Outlet tomada = new Outlet(nomeResposta, macResposta, statusResposta, room);
 
             // Cadastrar a tomada no banco
             dao.cadastrar(tomada);
