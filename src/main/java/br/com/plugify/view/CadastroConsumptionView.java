@@ -10,8 +10,6 @@ import java.sql.Date;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class CadastroConsumptionView {
     public static void main(String[] args) {
@@ -67,10 +65,8 @@ public class CadastroConsumptionView {
 
             System.out.println("Produto Cadastrado com sucesso!");
 
-        }catch (SQLException e) {
-            System.err.println("Erro de SQL: " + e.getMessage());
-        } catch (Exception e) {
-            System.err.println("Erro: " + e.getMessage());
+        } catch (SQLException e) {
+            System.err.println(e.getMessage());
         }
     }
 }

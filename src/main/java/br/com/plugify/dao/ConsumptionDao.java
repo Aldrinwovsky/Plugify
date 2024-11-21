@@ -41,7 +41,7 @@ public class ConsumptionDao {
     private Consumption parseConsumption(ResultSet resultado) throws SQLException {
         int id = resultado.getInt("id_consumption");
         Timestamp data = resultado.getTimestamp("consumption_date");
-        Double consumoTotal = resultado.getDouble("amount");
+        double consumoTotal = resultado.getDouble("amount");
         int id_tomada = resultado.getInt("outlets_id_outlet");
 
         Outlet outlet = new Outlet(id_tomada);

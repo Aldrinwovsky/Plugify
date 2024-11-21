@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="Arrumando tomadas, comodo e adicionando os consumos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/ConsumptionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroConsumptionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemConsumptionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaConsumptionView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/AlertDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroAlertView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemAlertView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaAlertView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/OutletDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/OutletDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/ConsumptionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/ConsumptionDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Alert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Alert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Consumption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Consumption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Outlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Outlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/model/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroOutletView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroOutletView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroRoomView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroConsumptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroConsumptionView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +58,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CadastroAlertView.executor": "Run",
     "Application.CadastroConsumptionView.executor": "Run",
     "Application.CadastroOutletView.executor": "Run",
     "Application.CadastroRoomView.executor": "Run",
+    "Application.ListagemAlertView.executor": "Run",
     "Application.ListagemConsumptionView.executor": "Run",
     "Application.ListagemOutletView.executor": "Run",
     "Application.ListagemRoomView.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.PesquisaAlertView.executor": "Run",
     "Application.PesquisaConsumptionView.executor": "Run",
     "Application.PesquisaOutletView.executor": "Run",
     "Application.PesquisaRoomPorIdView.executor": "Run",
@@ -148,7 +146,7 @@
       <workItem from="1731987432796" duration="306000" />
       <workItem from="1731987761805" duration="721000" />
       <workItem from="1732030694892" duration="27397000" />
-      <workItem from="1732126631821" duration="15834000" />
+      <workItem from="1732126631821" duration="27674000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando Room">
       <option name="closed" value="true" />
@@ -174,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732146094469</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Arrumando tomadas, comodo e adicionando os consumos">
+      <option name="closed" value="true" />
+      <created>1732146155018</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732146155018</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

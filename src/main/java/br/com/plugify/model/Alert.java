@@ -1,20 +1,27 @@
 package br.com.plugify.model;
 
-import java.util.Date;
+import java.sql.Date;
+import java.sql.Timestamp;
 
 public class Alert {
     private int idAlert;
     private String alertType;
     private String message;
-    private Date alertDate;
+    private Timestamp alertDate;
 
     // Construtores
-    public Alert(int idAlert, String alertType, String message, Date alertDate) {
+    public Alert(int idAlert, String alertType, String message, Timestamp alertDate) {
         this.idAlert = idAlert;
         this.alertType = alertType;
         this.message = message;
         this.alertDate = alertDate;
     }
+    public Alert(String alertType, String message, Timestamp alertDate) {
+        this.alertType = alertType;
+        this.message = message;
+        this.alertDate = alertDate;
+    }
+
 
     // Getters e Setters
     public int getIdAlert() {
@@ -41,11 +48,11 @@ public class Alert {
         this.message = message;
     }
 
-    public Date getAlertDate() {
+    public Timestamp getAlertDate() {
         return alertDate;
     }
 
-    public void setAlertDate(Date alertDate) {
+    public void setAlertDate(Timestamp alertDate) {
         this.alertDate = alertDate;
     }
 }
