@@ -18,6 +18,7 @@ public class AtualizacaoRoomView {
 
                 if (RoomDao.inputRoom.hasNextInt()) {
                     idPesquisa = RoomDao.inputRoom.nextInt();
+                    RoomDao.inputRoom.nextLine();
                     break; // Encerra o loop se a entrada for válida
                 } else {
                     System.out.println("Isso não é um número inteiro. Tente novamente.");
@@ -26,11 +27,15 @@ public class AtualizacaoRoomView {
             }
             Room comodo = dao.pesquisar(idPesquisa);
 
+
             System.out.println("Qual o nome do cômodo?");
             nomeResposta = RoomDao.inputRoom.nextLine();
 
             System.out.println("Qual a descrição do cômodo?");
             descricaoResposta = RoomDao.inputRoom.nextLine();
+
+            comodo.setName(nomeResposta);
+            comodo.setDescription(descricaoResposta);
 
             dao.atualizar(comodo);
             dao.fechaConexao();

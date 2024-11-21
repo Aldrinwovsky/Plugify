@@ -21,6 +21,7 @@ public class AtualizacaoOutletView {
 
                 if (RoomDao.inputRoom.hasNextInt()) {
                     idPesquisa = RoomDao.inputRoom.nextInt();
+                    RoomDao.inputRoom.nextLine();
                     break; // Encerra o loop se a entrada for válida
                 } else {
                     System.out.println("Isso não é um número inteiro. Tente novamente.");
@@ -37,6 +38,10 @@ public class AtualizacaoOutletView {
 
             System.out.println("A tomada está ligada? Sim(true) Não(false)");
             respostaBoolean = RoomDao.inputRoom.nextBoolean();
+
+            outlet.setName(nomeResposta);
+            outlet.setMacAddress(descricaoResposta);
+            outlet.setStatus(respostaBoolean);
 
             dao.atualizar(outlet);
             dao.fechaConexao();

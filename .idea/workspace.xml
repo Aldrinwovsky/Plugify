@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="Alertas">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AlertView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AtualizacaoOutletView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AtualizacaoRoomView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ConsumptionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/OutletView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RemocaoOutletView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RemocaoRoomView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RoomView.java" afterDir="false" />
+    <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="Terminado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/OutletDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/OutletDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroAlertView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroAlertView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroConsumptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroConsumptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroOutletView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroOutletView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/CadastroRoomView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemAlertView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemAlertView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemConsumptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemConsumptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemOutletView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemOutletView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ListagemRoomView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaAlertView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaAlertView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaConsumptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaConsumptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaOutletView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaOutletView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaRoomPorIdView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/PesquisaRoomPorIdView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AtualizacaoOutletView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AtualizacaoOutletView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AtualizacaoRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AtualizacaoRoomView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +142,7 @@
       <workItem from="1731987432796" duration="306000" />
       <workItem from="1731987761805" duration="721000" />
       <workItem from="1732030694892" duration="27397000" />
-      <workItem from="1732126631821" duration="38127000" />
+      <workItem from="1732126631821" duration="39856000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando Room">
       <option name="closed" value="true" />
@@ -205,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732161747523</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Terminado">
+      <option name="closed" value="true" />
+      <created>1732211469068</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732211469068</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +214,7 @@
     <MESSAGE value="Adicionando Tomadas/outlet" />
     <MESSAGE value="Arrumando tomadas, comodo e adicionando os consumos" />
     <MESSAGE value="Alertas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alertas" />
+    <MESSAGE value="Terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Terminado" />
   </component>
 </project>
