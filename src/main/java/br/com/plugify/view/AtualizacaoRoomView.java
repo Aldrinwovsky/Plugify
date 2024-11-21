@@ -6,16 +6,14 @@ import br.com.plugify.model.Room;
 
 import java.sql.SQLException;
 
-public class PesquisaRoomPorIdView {
-
-
-
-    public static void pesquisa() {
-        int idPesquisa;
+public class AtualizacaoRoomView {
+    public static void atualiza() {
+        String nomeResposta;
+        String descricaoResposta;
         try{
+            int idPesquisa;
             RoomDao dao = new RoomDao();
-
-            while (true) {
+            while (true){
                 System.out.print("Digite o ID: ");
 
                 if (RoomDao.inputRoom.hasNextInt()) {
@@ -26,19 +24,23 @@ public class PesquisaRoomPorIdView {
                     RoomDao.inputRoom.next(); // Limpa a entrada inválida
                 }
             }
+            Room comodo = dao.pesquisar(idPesquisa);
 
-            Room room = dao.pesquisar(idPesquisa);
-            System.out.println("ID: " + room.getIdRoom() + "\nName: " + room.getName() + "\nDescription: " + room.getDescription());
+            System.out.println("Qual o nome do cômodo?");
+            nomeResposta = RoomDao.inputRoom.nextLine();
 
+            System.out.println("Qual a descrição do cômodo?");
+            descricaoResposta = RoomDao.inputRoom.nextLine();
 
-        }catch (SQLException e){
+            dao.atualizar(comodo);
+            dao.fechaConexao();
+            System.out.println("Cômodo Atualizado!");
+
+        }catch(SQLException e){
             System.err.println(e.getMessage());
-        } catch (EntidadeNaoEncontradaException e){
+        }catch (EntidadeNaoEncontradaException e){
             System.err.println("Código não existe na tabela");
         }
-
-
     }
-
 
 }

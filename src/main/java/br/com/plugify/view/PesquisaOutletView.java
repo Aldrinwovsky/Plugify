@@ -8,7 +8,7 @@ import br.com.plugify.model.Outlet;
 import java.sql.SQLException;
 
 public class PesquisaOutletView {
-    public static void main(String[] args) {
+    public static void pesquisa() {
         int idPesquisa;
         try{
             OutletDao dao = new OutletDao();

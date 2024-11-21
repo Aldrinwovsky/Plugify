@@ -6,7 +6,7 @@ import br.com.plugify.model.Room;
 import java.sql.SQLException;
 
 public class CadastroRoomView {
-    public static void main(String[] args) {
+    public static void executarCadastro() {
         try{
             String nomeResposta;
             String descricaoResposta;

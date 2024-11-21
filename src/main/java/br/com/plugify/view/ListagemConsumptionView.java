@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ListagemConsumptionView {
-    public static void main(String[] args) {
+    public static void listagem() {
         try{
             ConsumptionDao dao = new ConsumptionDao();
             List<Consumption> consumos = dao.lista();

@@ -8,7 +8,7 @@ import br.com.plugify.model.Alert;
 import java.sql.SQLException;
 
 public class PesquisaAlertView {
-    public static void main(String[] args) {
+    public static void pesquisa() {
         try{
             int idPesquisa;
             AlertDao dao= new AlertDao();

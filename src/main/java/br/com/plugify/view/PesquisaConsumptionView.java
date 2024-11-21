@@ -8,7 +8,7 @@ import br.com.plugify.model.Consumption;
 import java.sql.SQLException;
 
 public class PesquisaConsumptionView {
-    public static void main(String[] args) {
+    public static void pesquisa() {
         int idPesquisa;
         try {
             ConsumptionDao dao = new ConsumptionDao();

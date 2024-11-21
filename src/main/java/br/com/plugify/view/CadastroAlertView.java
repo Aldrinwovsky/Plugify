@@ -9,7 +9,7 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 
 public class CadastroAlertView {
-    public static void main(String[] args) {
+    public static void executarCadastro() {
         try{
             String alertTypeString;
             String messageString;

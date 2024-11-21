@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ListagemRoomView {
-    public static void main(String[] args) {
+    public static void listagem() {
         try {
             RoomDao dao = new RoomDao();
             List<Room> salas = dao.listar();

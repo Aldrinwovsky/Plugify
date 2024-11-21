@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public class ListagemOutletView {
-    public static void main(String[] args) {
+    public static void listagem() {
         try{
             OutletDao dao = new OutletDao();
             List<Outlet> tomadas = dao.lista();

@@ -2,20 +2,15 @@ package br.com.plugify.view;
 
 import br.com.plugify.dao.RoomDao;
 import br.com.plugify.exception.EntidadeNaoEncontradaException;
-import br.com.plugify.model.Room;
 
 import java.sql.SQLException;
 
-public class PesquisaRoomPorIdView {
-
-
-
-    public static void pesquisa() {
+public class RemocaoRoomView {
+    public static void remocao(){
         int idPesquisa;
-        try{
+        try {
             RoomDao dao = new RoomDao();
-
-            while (true) {
+            while (true){
                 System.out.print("Digite o ID: ");
 
                 if (RoomDao.inputRoom.hasNextInt()) {
@@ -26,9 +21,9 @@ public class PesquisaRoomPorIdView {
                     RoomDao.inputRoom.next(); // Limpa a entrada inválida
                 }
             }
-
-            Room room = dao.pesquisar(idPesquisa);
-            System.out.println("ID: " + room.getIdRoom() + "\nName: " + room.getName() + "\nDescription: " + room.getDescription());
+            dao.remover(idPesquisa);
+            dao.fechaConexao();
+            System.out.println("Cômodo removido");
 
 
         }catch (SQLException e){
@@ -36,9 +31,5 @@ public class PesquisaRoomPorIdView {
         } catch (EntidadeNaoEncontradaException e){
             System.err.println("Código não existe na tabela");
         }
-
-
     }
-
-
 }

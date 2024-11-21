@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ListagemAlertView {
-    public static void main(String[] args) {
+    public static void listagem(){
         try {
             AlertDao dao = new AlertDao();
             List<Alert> alertas = dao.lista();

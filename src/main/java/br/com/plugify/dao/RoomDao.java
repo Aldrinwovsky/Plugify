@@ -82,6 +82,23 @@ public class RoomDao {
         return null; // Retorna null se não encontrar a sala
     }
 
+    public void atualizar(Room room) throws SQLException{
+        PreparedStatement stm = conexao.prepareStatement("UPDATE rooms SET name = ?, description = ? WHERE id_room = ?");
+        stm.setString(1, room.getName());
+        stm.setString(2, room.getDescription());
+        stm.setInt(3, room.getIdRoom());
+        stm.executeUpdate();
+    }
+
+    public void remover(int id_comodo) throws SQLException, EntidadeNaoEncontradaException{
+        PreparedStatement stm = conexao.prepareStatement("DELETE from rooms where id_room = ?");
+        stm.setInt(1, id_comodo);
+        int linha = stm.executeUpdate();
+        if (linha == 0){
+            throw new EntidadeNaoEncontradaException("Cômodo não encontrado para ser removido");
+        }
+    }
+
     // Método para fechar a conexão
     public void fechaConexao() throws SQLException {
         conexao.close();

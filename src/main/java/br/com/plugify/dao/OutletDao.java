@@ -78,6 +78,24 @@ public class OutletDao {
         return null; // Retorna null se não encontrar a sala
     }
 
+    public void atualizar(Outlet outlet) throws SQLException{
+        PreparedStatement stm = conexao.prepareStatement("UPDATE outlets SET name = ?, mac_address = ?, status = ?, rooms_id_room = ? WHERE id_outlet = ?");
+        stm.setString(1, outlet.getName());
+        stm.setString(2, outlet.getMacAddress());
+        stm.setBoolean(3, outlet.getStatus());
+        stm.setInt(4, outlet.getRoom().getIdRoom());
+        stm.executeUpdate();
+    }
+
+    public void remover(int id_tomada) throws SQLException, EntidadeNaoEncontradaException{
+        PreparedStatement stm = conexao.prepareStatement("DELETE from outlets where id_outlet = ?");
+        stm.setInt(1, id_tomada);
+        int linha = stm.executeUpdate();
+        if (linha == 0){
+            throw new EntidadeNaoEncontradaException("Tomada não encontrada para ser removida");
+        }
+    }
+
     public void fechaConexao() throws SQLException{
         conexao.close();
     }
