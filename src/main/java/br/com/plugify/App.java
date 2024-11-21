@@ -1,12 +1,6 @@
 package br.com.plugify;
 
-import br.com.plugify.dao.RoomDao;
-import br.com.plugify.factory.ConnectionFactory;
-import br.com.plugify.model.Room;
 import br.com.plugify.view.*;
-
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Scanner;
 
 /**

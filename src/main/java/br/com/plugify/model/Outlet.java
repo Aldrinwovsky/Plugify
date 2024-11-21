@@ -6,7 +6,6 @@ public class Outlet {
     private String macAddress;
     private boolean status;
     private Room room;
-    private int idRoom;
 
     // Construtores
     public Outlet(int idOutlet, String name, String macAddress, boolean status, Room room) {
@@ -22,12 +21,6 @@ public class Outlet {
         this.macAddress = macAddress;
         this.status = status;
         this.room = room;
-    }
-    public Outlet(String name, String macAddress, boolean status, int idroom) {
-        this.name = name;
-        this.macAddress = macAddress;
-        this.status = status;
-        this.idRoom = idroom;
     }
 
     public Outlet(int idTomada) {
