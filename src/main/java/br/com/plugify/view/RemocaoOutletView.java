@@ -16,6 +16,7 @@ public class RemocaoOutletView {
 
                 if (RoomDao.inputRoom.hasNextInt()) {
                     idPesquisa = RoomDao.inputRoom.nextInt();
+                    RoomDao.inputRoom.next();
                     break; // Encerra o loop se a entrada for válida
                 } else {
                     System.out.println("Isso não é um número inteiro. Tente novamente.");

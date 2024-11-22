@@ -11,7 +11,10 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int escolha;
+        System.out.println("Seja bem vindo ao Menu do Plugify!");
+        System.out.println("Qual tabela gostaria de editar?");
         do {
+
             System.out.println("Escolha uma opção:\n1-Cômodos\n2-Tomadas\n3-Consumo\n4-Alertas\n0-Sair");
             escolha = scanner.nextInt();
             switch (escolha) {
