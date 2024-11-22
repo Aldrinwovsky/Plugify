@@ -4,6 +4,7 @@ import br.com.plugify.dao.RoomDao;
 import br.com.plugify.exception.EntidadeNaoEncontradaException;
 
 import java.sql.SQLException;
+import java.util.Scanner;
 
 public class RemocaoRoomView {
     public static void remocao(){
@@ -15,14 +16,19 @@ public class RemocaoRoomView {
 
                 if (RoomDao.inputRoom.hasNextInt()) {
                     idPesquisa = RoomDao.inputRoom.nextInt();
+                    RoomDao.inputRoom.nextLine();
                     break; // Encerra o loop se a entrada for válida
                 } else {
                     System.out.println("Isso não é um número inteiro. Tente novamente.");
                     RoomDao.inputRoom.nextLine(); // Limpa a entrada inválida
                 }
             }
+
+
             dao.remover(idPesquisa);
+
             dao.fechaConexao();
+
             System.out.println("Cômodo removido");
 
 

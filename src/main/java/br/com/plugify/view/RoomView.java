@@ -31,7 +31,7 @@ public class RoomView {
                 dao = new RoomDao();
                 int escolha;
                 do {
-                    System.out.println("Escolha uma opção:\n1-Cadastrar\n2-Pesquisar por ID\n3-Listar\n4-Atualizar\n5-Remover\n0-Sair");
+                    System.out.println("Escolha uma opção:\n1-Cadastrar\n2-Pesquisar por ID\n3-Listar\n4-Atualizar\n5-Remover\n0-Voltar");
                     escolha = scanner.nextInt();
                     switch (escolha) {
                         case 1:

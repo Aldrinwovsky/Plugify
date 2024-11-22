@@ -6,9 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="e3bdd59a-9d66-43f6-af96-d85764b5e91a" name="Changes" comment="Terminado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AlertView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AlertView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ConsumptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ConsumptionView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RemocaoRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RemocaoRoomView.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/OutletDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/OutletDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/dao/RoomDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AlertView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/AlertView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ConsumptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/ConsumptionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/OutletView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/OutletView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RemocaoOutletView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RemocaoOutletView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RemocaoRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RemocaoRoomView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/plugify/view/RoomView.java" afterDir="false" />
+>>>>>>> bebfc352e108f67af70e84498dfbd8efa4d38cfd
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +116,7 @@
       <recent name="br.com.plugify.factory" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.plugify.App" />
@@ -138,6 +151,8 @@
       </list>
     </recent_temporary>
   </component>
+=======
+>>>>>>> bebfc352e108f67af70e84498dfbd8efa4d38cfd
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -157,7 +172,10 @@
       <workItem from="1731987432796" duration="306000" />
       <workItem from="1731987761805" duration="721000" />
       <workItem from="1732030694892" duration="27397000" />
-      <workItem from="1732126631821" duration="49254000" />
+      <workItem from="1732126631821" duration="49769000" />
+      <workItem from="1732232859793" duration="3519000" />
+      <workItem from="1732236943256" duration="102000" />
+      <workItem from="1732237093357" duration="2495000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando Room">
       <option name="closed" value="true" />
@@ -215,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732213949945</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Terminado">
+      <option name="closed" value="true" />
+      <created>1732224087509</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732224087509</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

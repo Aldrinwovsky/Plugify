@@ -88,7 +88,7 @@ public class OutletDao {
     }
 
     public void remover(int id_tomada) throws SQLException, EntidadeNaoEncontradaException{
-        PreparedStatement stm = conexao.prepareStatement("DELETE from outlets where id_outlet = ?");
+        PreparedStatement stm = conexao.prepareStatement("DELETE FROM outlets WHERE id_outlet = ?");
         stm.setInt(1, id_tomada);
         int linha = stm.executeUpdate();
         if (linha == 0){

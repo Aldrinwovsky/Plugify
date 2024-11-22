@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class RoomDao {
 
 
-    public static Scanner inputRoom = new Scanner(System.in);
+    public static final Scanner inputRoom = new Scanner(System.in);
     private Connection conexao;
 
     // Construtor que inicializa a conexão com o banco de dados
@@ -91,12 +91,18 @@ public class RoomDao {
     }
 
     public void remover(int id_comodo) throws SQLException, EntidadeNaoEncontradaException{
-        PreparedStatement stm = conexao.prepareStatement("DELETE from rooms where id_room = ?");
-        stm.setInt(1, id_comodo);
-        int linha = stm.executeUpdate();
-        if (linha == 0){
-            throw new EntidadeNaoEncontradaException("Cômodo não encontrado para ser removido");
+        String query = "DELETE FROM rooms WHERE id_room = ?";
+        try (PreparedStatement stm = conexao.prepareStatement(query)) {
+            stm.setInt(1, id_comodo);
+            int linhasAfetadas = stm.executeUpdate();
+            if (linhasAfetadas == 0) {
+                throw new EntidadeNaoEncontradaException("Cômodo não encontrado para ser removido");
+            }
+        } catch (SQLException e) {
+            System.err.println("Erro SQL: " + e.getMessage());
+            throw e;
         }
+
     }
 
     // Método para fechar a conexão

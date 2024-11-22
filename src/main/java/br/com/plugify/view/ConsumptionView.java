@@ -25,7 +25,7 @@ public class ConsumptionView {
             dao = new ConsumptionDao();
             int escolha;
             do {
-                System.out.println("Escolha uma opção:\n1-Cadastrar\n2-Pesquisar por ID\n3-Listar\n0-Sair");
+                System.out.println("Escolha uma opção:\n1-Cadastrar\n2-Pesquisar por ID\n3-Listar\n0-Voltar");
                 escolha = scanner.nextInt();
                 switch (escolha) {
                     case 1:
