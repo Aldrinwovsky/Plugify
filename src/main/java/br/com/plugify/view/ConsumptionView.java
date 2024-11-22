@@ -20,7 +20,7 @@ public class ConsumptionView {
     public static void Menu(){
         Scanner scanner = new Scanner(System.in);
         ConsumptionDao dao;
-        System.out.println("Bem vindo as configurações da tomada!");
+        System.out.println("Bem vindo as configurações de Consumo!");
         try {
             dao = new ConsumptionDao();
             int escolha;

@@ -20,7 +20,7 @@ public class AlertView {
     public static void Menu(){
         Scanner scanner = new Scanner(System.in);
         AlertDao dao;
-        System.out.println("Bem vindo as configurações da tomada!");
+        System.out.println("Bem vindo as configurações de Alerta!");
         try {
             dao = new AlertDao();
             int escolha;

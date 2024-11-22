@@ -18,7 +18,7 @@ public class RemocaoRoomView {
                     break; // Encerra o loop se a entrada for válida
                 } else {
                     System.out.println("Isso não é um número inteiro. Tente novamente.");
-                    RoomDao.inputRoom.next(); // Limpa a entrada inválida
+                    RoomDao.inputRoom.nextLine(); // Limpa a entrada inválida
                 }
             }
             dao.remover(idPesquisa);
